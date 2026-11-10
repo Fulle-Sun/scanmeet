@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>码上相逢 Scanmeet · 扫一瓶酒，见一个人</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; background: #faf8f5; color: #2c2c2c; line-height: 1.7; }
+
+  .hero { min-height: 90vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 40px 24px; background: linear-gradient(180deg, #f5efe6 0%, #faf8f5 100%); }
+  .hero .brand { font-size: 13px; letter-spacing: 6px; color: #8b7355; margin-bottom: 20px; }
+  .hero h1 { font-size: clamp(30px, 6vw, 48px); font-weight: 700; color: #1a1a1a; margin-bottom: 16px; }
+  .hero h1 em { font-style: normal; color: #8b7355; }
+  .hero .sub { font-size: clamp(15px, 2.5vw, 18px); color: #666; max-width: 480px; margin-bottom: 36px; }
+  .hero .scan-icon { width: 80px; height: 80px; border: 2px solid #8b7355; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 40px; margin-bottom: 24px; }
+
+  section { padding: 70px 24px; max-width: 720px; margin: 0 auto; }
+  .section-title { font-size: clamp(22px, 4vw, 28px); text-align: center; margin-bottom: 12px; font-weight: 700; }
+  .section-desc { text-align: center; color: #888; margin-bottom: 40px; font-size: 15px; }
+
+  .how-it-works { display: grid; gap: 16px; }
+  .step { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); display: flex; gap: 16px; align-items: flex-start; }
+  .step .n { width: 36px; height: 36px; border-radius: 50%; background: #8b7355; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 600; flex-shrink: 0; }
+  .step h4 { font-size: 16px; margin-bottom: 4px; }
+  .step p { font-size: 14px; color: #777; }
+
+  .value { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .value-card { background: #fff; border-radius: 12px; padding: 24px; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
+  .value-card .emoji { font-size: 36px; margin-bottom: 12px; }
+  .value-card h4 { font-size: 15px; margin-bottom: 6px; }
+  .value-card p { font-size: 13px; color: #888; }
+
+  .quote { text-align: center; padding: 40px 24px; }
+  .quote blockquote { font-size: clamp(18px, 3vw, 22px); color: #555; font-style: italic; max-width: 500px; margin: 0 auto; line-height: 1.8; }
+  .quote cite { display: block; margin-top: 16px; font-size: 14px; color: #999; font-style: normal; }
+
+  .wechat-bar { background: #1a1a1a; border-radius: 16px; padding: 36px 24px; text-align: center; color: #fff; }
+  .wechat-bar h3 { font-size: 20px; margin-bottom: 12px; }
+  .wechat-bar p { color: #aaa; font-size: 14px; margin-bottom: 20px; }
+  .wechat-bar .id { display: inline-block; padding: 10px 28px; background: #8b7355; border-radius: 24px; font-size: 16px; font-weight: 600; color: #fff; }
+
+  footer { text-align: center; padding: 32px 24px; color: #aaa; font-size: 12px; }
+
+  @media (max-width: 480px) {
+    .value { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="scan-icon">▣</div>
+  <div class="brand">SCANMEET · 码上相逢</div>
+  <h1>扫一瓶酒<br><em>见一个人</em></h1>
+  <p class="sub">每瓶传语酒的酒标上都有一个二维码<br>扫一扫，瓶背后的人就出现在你眼前</p>
+</div>
+
+<section>
+  <h2 class="section-title">它是怎么回事</h2>
+  <p class="section-desc">很简单，三步</p>
+  <div class="how-it-works">
+    <div class="step">
+      <div class="n">1</div>
+      <div>
+        <h4>买一瓶酒</h4>
+        <p>传语酒，26度纯粮冷萃，瓶身酒标中央有一个二维码。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="n">2</div>
+      <div>
+        <h4>扫一扫二维码</h4>
+        <p>用微信扫瓶标上的码，直接播放这段酒主人提前录好的视频。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="n">3</div>
+      <div>
+        <h4>听见他想说的话</h4>
+        <p>可能是一首歌，可能是一段独白，可能是一句"好久不见"。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">为什么要做这件事</h2>
+  <p class="section-desc">酒是媒介，人才是内容</p>
+  <div class="value">
+    <div class="value-card">
+      <div class="emoji">🎵</div>
+      <h4>给粉丝的专属礼物</h4>
+      <p>博主把自己的视频装进瓶子里，粉丝收到的不只是酒，是一句专属问候。</p>
+    </div>
+    <div class="value-card">
+      <div class="emoji">💌</div>
+      <h4>说不出口的话，让酒替你说</h4>
+      <p>感谢、道歉、想念、祝福——录一段视频放进瓶里，比文字重，比当面轻。</p>
+    </div>
+    <div class="value-card">
+      <div class="emoji">🎭</div>
+      <h4>让个性看得见</h4>
+      <p>瓶身是静态的，但二维码背后是动态的你。每一瓶都在表达"我是谁"。</p>
+    </div>
+    <div class="value-card">
+      <div class="emoji">🍶</div>
+      <h4>好喝才是底子</h4>
+      <p>零下18度冷萃纯粮酒，26度微醺。故事再动人，酒本身得拿得出手。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="quote">
+    <blockquote>"以前送人酒，送的是牌子。<br>现在送人酒，送的是瓶背后那个人想说的话。"</blockquote>
+    <cite>—— 码上相逢</cite>
+  </div>
+</section>
+
+<section>
+  <div class="wechat-bar">
+    <h3>关注「码上相逢」服务号</h3>
+    <p>了解更多玩法 · 定制你的专属瓶身视频</p>
+    <div class="id">微信服务号：chuanyu8529</div>
+  </div>
+</section>
+
+<footer>
+  码上相逢 Scanmeet · 传语酒出品<br>
+  © 2026 传语酒 CHUANYU · 纯粮冷萃26度
+</footer>
+
+</body>
+</html>
